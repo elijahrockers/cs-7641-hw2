@@ -1,0 +1,17 @@
+N: 2722
+Total elapsed: 662.6616296768188
+GridSearchCV(cv=2,
+             estimator=NNClassifier(algorithm=<function simulated_annealing at 0x7fe17a67b9a0>,
+                                    clip_max=5, early_stopping=True,
+                                    learning_rate=None, max_attempts=500,
+                                    runner=<mlrose_hiive.runners.nngs_runner.NNGSRunner object at 0x7fe16044b670>,
+                                    schedule=None, seed=2),
+             n_jobs=5,
+             param_grid={'activation': [<function relu at 0x7fe17a68d5a0>,
+                                        <function tanh at 0x7fe17a68d870>],
+                         'hidden_layer_sizes': [[500, 500, 10]],
+                         'learning_rate': [0.1, 1, 10, 100], 'max_iters': [500],
+                         'schedule': [ArithDecay(init_temp=1, decay=0.0001, min_temp=0.001),
+                                      ArithDecay(init_temp=10, decay=0.0001, min_temp=0.001)]},
+             return_train_score=True,
+             scoring=make_scorer(_grid_search_score_intercept), verbose=True)
